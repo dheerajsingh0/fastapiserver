@@ -1,0 +1,9 @@
+follow steps
+
+1	 install python and anconda
+2 install package 
+	pandas
+	pymongo
+	os
+3	run the command to start backend server
+	uvicorn main:app --reaload
