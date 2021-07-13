@@ -70,7 +70,7 @@ async def create_upload_file(csv_file: UploadFile = File(...)):
         df.fillna("",inplace=True)
         data=df.to_dict(orient='records')
 
-        client = pymongo.MongoClient("mongodb+srv://dheerajkumarblr:"+ urllib.parse.quote("dheerajdk@234") +"@cluster0.zeviv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        client = pymongo.MongoClient("mongodb+srv://email:"+ urllib.parse.quote("password") +"@cluster0.zeviv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
         
         db=client["techpath"]
         mongores=db.csvfile.insert_many(data)
